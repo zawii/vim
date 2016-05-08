@@ -1,0 +1,54 @@
+set nocompatible
+filetype off
+
+set term=xterm
+set t_Co=256
+let &t_AB="\e[48;5;%dm"
+let &t_AF="\e[38;5;%dm"
+
+set guifont       = "Menlo:12"
+let g:colors_name = "badwolf"
+set background    = "dark"
+
+set modelines=0
+syntax enable
+set nu
+set ruler
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest,full
+set visualbell
+set ttyfast
+set backspace=indent,eol,start
+set laststatus=2
+" set relativenumber
+set cursorline
+
+set nofoldenable    " disable folding
+let g:vim_markdown_folding_disabled=1
+
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+" clear search
+
+""set undolevels=20
+set title
+
+set noerrorbells
+set noswapfile
+set nobackup
